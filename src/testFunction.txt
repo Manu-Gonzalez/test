@@ -1,0 +1,11 @@
+export function promedioDeNotas(n1: number, n2: number, n3: number) {
+
+    if (n1 == 0 || n2 == 0 || n3 == 0 ) return "Las notas no pueden ser menores a 1";
+    if (n1 > 10 || n2 > 10 || n3 > 10) return "Las notas no pueden ser mayores a 10";
+    if (n1 < 0 || n2 < 0 || n3 < 0) return "Las notas no pueden ser negativas";
+
+    const sumaTotal = n1 + n2 + n3;
+    const promedio = sumaTotal / 3;
+
+    return promedio;
+}
